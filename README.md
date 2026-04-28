@@ -1,4 +1,7 @@
-# SheSafe – Women Safety App (JavaScript / JSX)
+# SheSafe – AI Enabled Women Safety App 
+
+## Overview
+SheSafe is an AI-powered women safety application designed to provide instant emergency support, real-time alerts, and community-based safety insights.
 
 React + Vite + Tailwind CSS v4 + Framer Motion — no TypeScript!
 
