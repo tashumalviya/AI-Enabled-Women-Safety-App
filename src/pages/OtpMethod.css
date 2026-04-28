@@ -1,0 +1,297 @@
+
+
+/* ─── Root ─────────────────────────────────────────────── */
+.otp-root {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+ 
+/* ─── Orbs ───────────────────────────────────────────────── */
+.otp-orb {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 9999px;
+  pointer-events: none;
+  filter: blur(80px);
+}
+.otp-orb--dark  { opacity: 0.15; }
+.otp-orb--light { opacity: 0.25; }
+ 
+/* ─── Top Bar ────────────────────────────────────────────── */
+.otp-topbar {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 1.25rem 0.5rem;
+  max-width: 28rem;
+  margin: 0 auto;
+  width: 100%;
+}
+ 
+.otp-topbar__left {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+ 
+.otp-topbar__back-btn {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.otp-topbar__back-btn--dark  { background: rgba(255,255,255,0.1); }
+.otp-topbar__back-btn--light { background: rgba(0,0,0,0.05); }
+ 
+.otp-topbar__back-icon {
+  width: 1rem;
+  height: 1rem;
+}
+.otp-topbar__back-icon--dark  { color: #fff; }
+.otp-topbar__back-icon--light { color: #1e293b; }
+ 
+.otp-topbar__brand-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(124,58,237,0.4);
+}
+ 
+.otp-topbar__shield {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #fff;
+}
+ 
+.otp-topbar__name {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.otp-topbar__name--dark  { color: #fff; }
+.otp-topbar__name--light { color: #1e293b; }
+ 
+.otp-topbar__theme-btn {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.otp-topbar__theme-btn--dark  { background: rgba(255,255,255,0.1); }
+.otp-topbar__theme-btn--light { background: rgba(0,0,0,0.05); }
+ 
+.otp-topbar__sun  { width: 1rem; height: 1rem; color: #fcd34d; }
+.otp-topbar__moon { width: 1rem; height: 1rem; color: #64748b; }
+ 
+/* ─── Card Wrapper ───────────────────────────────────────── */
+.otp-card-wrapper {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+}
+ 
+/* ─── Card ───────────────────────────────────────────────── */
+.otp-card {
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 24rem;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}
+.otp-card--dark {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.otp-card--light {
+  background: rgba(255,255,255,0.8);
+  border: 1px solid rgba(167,139,250,0.6);
+  box-shadow: 0 20px 40px rgba(124,58,237,0.1);
+}
+ 
+/* ─── Card Header ────────────────────────────────────────── */
+.otp-card__header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+ 
+.otp-card__header-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  box-shadow: 0 12px 32px rgba(124,58,237,0.4);
+  font-size: 1.5rem;
+}
+ 
+.otp-card__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.otp-card__title--dark  { color: #fff; }
+.otp-card__title--light { color: #1e293b; }
+ 
+.otp-card__subtitle {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+.otp-card__subtitle--dark  { color: #94a3b8; }
+.otp-card__subtitle--light { color: #64748b; }
+ 
+.otp-card__phone {
+  color: #7c3aed;
+  font-weight: 600;
+}
+ 
+/* ─── Method List ────────────────────────────────────────── */
+.otp-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+ 
+/* ─── Method Card ────────────────────────────────────────── */
+.otp-method-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  transition: all 0.2s;
+  text-align: left;
+  cursor: pointer;
+  border: none;
+}
+ 
+.otp-method-card--selected-dark {
+  background: linear-gradient(135deg, rgba(109,40,217,0.6), rgba(147,51,234,0.6));
+  border: 2px solid #a78bfa;
+  box-shadow: 0 8px 24px rgba(124,58,237,0.3);
+}
+.otp-method-card--default-dark {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+.otp-method-card--default-dark:hover {
+  border-color: rgba(255,255,255,0.3);
+}
+ 
+.otp-method-card--selected-light {
+  background: linear-gradient(135deg, #f5f3ff, #faf5ff);
+  border: 2px solid #7c3aed;
+  box-shadow: 0 8px 24px rgba(167,139,250,0.3);
+}
+.otp-method-card--default-light {
+  background: #fff;
+  border: 1px solid #ede9fe;
+}
+.otp-method-card--default-light:hover {
+  border-color: #c4b5fd;
+}
+ 
+.otp-method-card__icon {
+  font-size: 1.5rem;
+}
+ 
+.otp-method-card__text {
+  flex: 1;
+}
+ 
+.otp-method-card__label {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.otp-method-card__label--dark  { color: #fff; }
+.otp-method-card__label--light { color: #1e293b; }
+ 
+.otp-method-card__desc {
+  font-size: 0.75rem;
+  margin-top: 0.125rem;
+}
+.otp-method-card__desc--dark  { color: #94a3b8; }
+.otp-method-card__desc--light { color: #64748b; }
+ 
+/* ─── Radio Dot ──────────────────────────────────────────── */
+.otp-method-card__radio {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  border: 2px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.otp-method-card__radio--selected {
+  border-color: #7c3aed;
+  background: #7c3aed;
+}
+.otp-method-card__radio--dark  { border-color: rgba(255,255,255,0.3); background: transparent; }
+.otp-method-card__radio--light { border-color: #ddd6fe; background: transparent; }
+ 
+.otp-method-card__radio-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: #fff;
+}
+ 
+/* ─── Submit Button ──────────────────────────────────────── */
+.otp-submit {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(124,58,237,0.4);
+  transition: box-shadow 0.2s;
+}
+.otp-submit:hover {
+  box-shadow: 0 8px 32px rgba(124,58,237,0.6);
+}
+ 
+.otp-submit__icon {
+  width: 1rem;
+  height: 1rem;
+}
+ 

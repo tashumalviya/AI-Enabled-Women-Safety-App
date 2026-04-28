@@ -1,0 +1,109 @@
+.onboarding-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+/* Light / Dark */
+.onboarding-container.dark {
+  background: linear-gradient(135deg,#1a0533,#0f1a3d);
+  color: white;
+}
+
+.onboarding-container:not(.dark) {
+  background: #f5f3ff;
+  color: #1e293b;
+}
+
+/* Card */
+.onboarding-card {
+  width: 320px;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.1);
+}
+
+/* Emoji */
+.emoji-box {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji {
+  font-size: 60px;
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+.text-center h2 {
+  margin-bottom: 8px;
+}
+
+.text-center p {
+  font-size: 14px;
+  color: gray;
+}
+
+/* User Card */
+.user-card {
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.1);
+}
+
+.label {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin: 15px 0;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: gray;
+  border-radius: 50%;
+}
+
+.dot.active {
+  width: 20px;
+ background: linear-gradient(135deg, #7c3aed, #9333ea);}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.back-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+}
+
+.next-btn {
+  flex: 2;
+  padding: 10px;
+  border-radius: 10px;
+ background: linear-gradient(135deg, #7c3aed, #9333ea);  color: white;
+  border: none;
+  cursor: pointer;
+}

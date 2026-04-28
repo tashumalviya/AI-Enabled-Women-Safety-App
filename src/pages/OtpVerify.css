@@ -1,0 +1,137 @@
+.otp-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.otp-container.dark {
+  background: linear-gradient(135deg,#1a0533,#0f1a3d);
+  color: white;
+}
+
+.otp-container:not(.dark) {
+  background: #f5f3ff;
+  color: #1e293b;
+}
+
+/* Top bar */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  margin-bottom: 20px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-btn {
+  border: none;
+  background: rgba(0,0,0,0.1);
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logo {
+  background: linear-gradient(135deg, #7c3aed, #9333ea);
+  padding: 8px;
+  border-radius: 10px;
+  color: white;
+}
+
+.app-name {
+  font-weight: bold;
+}
+
+/* Card */
+.otp-card {
+  width: 320px;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.1);
+}
+
+/* Center */
+.center {
+  text-align: center;
+}
+
+.lock {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.method {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+/* OTP */
+.otp-boxes {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.otp-input {
+  width: 40px;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+.otp-input.filled {
+  border-color: purple;
+}
+
+.otp-input.error {
+  border-color: red;
+}
+
+/* Messages */
+.error-msg {
+  color: red;
+  text-align: center;
+}
+
+.success-msg {
+  color: green;
+  text-align: center;
+}
+
+/* Button */
+.verify-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+ background: linear-gradient(135deg, #7c3aed, #9333ea);
+   color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
