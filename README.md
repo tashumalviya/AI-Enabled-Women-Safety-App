@@ -63,3 +63,6 @@ Use **123456** on the OTP screen to verify successfully.
 - Tailwind CSS 4
 - Framer Motion 11
 - Lucide React
+
+## Developed By
+   Tashu Malviya
