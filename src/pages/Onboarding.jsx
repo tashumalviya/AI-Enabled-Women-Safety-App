@@ -2,7 +2,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useApp } from "../context/AppContext";
-import "./Onboarding.css";
+import "./onboarding.css";
 
 const SCREENS = [
   {
